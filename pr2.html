@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css assignment 2</title>
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <style>
+        #mainTopic {
+            color: #0000ff;
+        }
+
+        * {
+            text-align: center;
+        }
+
+        h1,
+        h3,
+        h5 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        body>p {
+            color: white;
+            background-color: cornflowerblue;
+        }
+
+        div>button {
+            color: azure;
+            background-color: purple;
+        }
+
+        div>button:hover {
+            color: blue;
+            background-color: yellow;
+        }
+
+        body>p:nth-of-type(3n) {
+            color: yellow;
+        }
+
+        #mainTopic::first-letter {
+            color: red;
+        }
+
+        /* now i will use the attribute selector  */
+        input[type="checkboxx"]:checked + label {
+            color: red !important;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 id="mainTopic">CSS Practice</h1>
+    <h3>Let's learn about selector.</h3>
+    <!-- Paragraph1 -->
+    <p>There are multiple selectors in css.</p>
+    <!-- Paragraph2 -->
+    <p>Some of them include class selector, id selector etc.</p>
+    <!-- Paragraph3 -->
+    <p>And we can also combine these too.</p>
+    <div>
+        <h5>Did you like the practice set?</h5>
+        <input type="checkbox" id="yes" />
+        <label for="yes">Yes</label>
+        <br />
+        <button>Learn next!</button>
+    </div>
+</body>
+
+</html>
